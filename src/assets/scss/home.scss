@@ -16,7 +16,6 @@
     color: $dark;
     .text-content {
       h1 {
-        font-weight: 800;
         font-size: 3.2rem;
       }
       hr {
@@ -25,38 +24,43 @@
         border-radius: 2rem;
         margin-left: 0;
       }
-      h4 {
-        font-weight: 500;
-      }
     }
     .categories-content {
       z-index: 2;
       height: auto;
-      .card {
-        height: 100%;
-        box-shadow: 0 2px 15px -1px #00000042;
-        // border-radius: 25px;
-        margin-right: 15px;
-        .card-body {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          .comp-icon {
-            width: 70%;
-          }
-          .card-title {
-            font-weight: 800;
-            font-size: 1.1rem;
-            text-align: center;
-            margin-top: 1rem;
-          }
-        }
-        &:first-child {
+
+      &:first-child {
+        .card {
           border-top-left-radius: 50px;
         }
-        &:last-child {
+      }
+      &:last-child {
+        .card {
           border-bottom-right-radius: 50px;
+        }
+      }
+      .card-container {
+        padding-right: 10px;
+        padding-top: 5%;
+        .card {
+          height: 100%;
+          box-shadow: 0 2px 15px -1px #00000042;
+          // border-radius: 25px;
+          // margin-right: 15px;
+          .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .comp-icon {
+              width: 70%;
+            }
+            .card-title {
+              font-size: 1.1rem;
+              text-align: center;
+              margin-top: 1rem;
+            }
+          }
         }
       }
     }
@@ -72,6 +76,48 @@
       object-fit: cover;
       background-size: contain;
     }
+  }
+}
+
+.main-home {
+  padding: 5% 8%;
+  .slider-container {
+    padding: 5% 0;
+    // padding-right: 8%;
+    .slider-title {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      .title-main {
+        text-align: center;
+      }
+      .slider-title-hr {
+        border-top: 0.3rem solid $blue;
+        width: 3.3rem;
+        border-radius: 2rem;
+        margin-top: 0;
+      }
+    }
+    .card {
+      height: 18rem;
+    }
+  }
+}
+
+footer {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: $black;
+  align-items: center;
+  padding: 0 8% 0% 8%;
+  @include footer(6rem, null, $white);
+  p {
+    margin: 0;
+    color: $white !important;
+  }
+  a {
+    color: $gray;
   }
 }
 

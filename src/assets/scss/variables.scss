@@ -1,11 +1,44 @@
 // colors
 
-$yellow : #ffc102;
-$yellow-ucic: #ECC413;
+$yellow: #ffc102;
+$yellow-ucic: #ecc413;
 $soft-blue: #908490;
 $blue: #348fdd;
 $white: #fff;
 $dark: #282627;
+$gray: #727272;
+$black: #000;
 
-// font-size 
+// font-weight
 
+.montserrat-l {
+  font-weight: 300;
+}
+.montserrat-r {
+  font-weight: 400;
+}
+.montserrat-rb {
+  font-weight: 500;
+}
+.montserrat-b {
+  font-weight: 700;
+}
+.montserrat-sb {
+  font-weight: 900;
+}
+
+//font-size
+
+.section-cat-title {
+  font-size: 3.125rem;
+}
+
+//mixins
+
+@mixin footer($height, $color, $colortop: $white) {
+  height: height;
+  align-items: center;
+  padding: 0 6% 0% 6%;
+  background-color: $color;
+  border-top: 0.2rem solid $colortop;
+}

@@ -7,56 +7,56 @@ import comp4 from "../../assets/img/icons/comp_4.png";
 import comp5 from "../../assets/img/icons/comp_5.png";
 
 export default function() {
+  const competencies = [
+    {
+      img: comp1,
+      name: "Determinación en la ejecución"
+    },
+    {
+      img: comp2,
+      name: "Energización de las personas"
+    },
+    {
+      img: comp3,
+      name: "Obsesión por el cliente"
+    },
+    {
+      img: comp4,
+      name: "Mentalidad digital"
+    },
+    {
+      img: comp5,
+      name: "Foco en data"
+    }
+  ];
   return (
     <>
       <div className="container mw-100 banner-container">
         <div className="row">
           <div className="col-12 col-md-6 banner-text">
             <div className="text-content my-3">
-              <h1>Entrénate</h1>
+              <h1 class="montserrat-b">Entrénate</h1>
               <hr />
-              <h4>¿qué competencia D3EC quieres reforzar hoy?</h4>
+              <h4 class="montserrat-rb">
+                ¿qué competencia D3EC quieres reforzar hoy?
+              </h4>
             </div>
             <div className="row categories-content">
-              <div className="card col-sm-6 col-md-2">
-                <div className="card-body">
-                  <img class="comp-icon" src={comp1} alt="" />
-                  <div className="card-title">
-                    Determinación en la ejecución
+              {competencies &&
+                competencies.map(el => (
+                  <div className="card-container col-6 col-md-2">
+                    <div className="card ">
+                      <div className="card-body">
+                        <img className="comp-icon" src={el.img} alt="" />
+                        <div className="card-title montserrat-b">{el.name}</div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div className="card col-sm-6 col-md-2">
-                <div className="card-body">
-                  <img class="comp-icon" src={comp2} alt="" />
-
-                  <div className="card-title">Energización de las personas</div>
-                </div>
-              </div>
-              <div className="card col-sm-6 col-md-2">
-                <div className="card-body">
-                  <img class="comp-icon" src={comp3} alt="" />
-
-                  <div className="card-title"> Obsesión por el cliente</div>
-                </div>
-              </div>
-              <div className="card col-sm-6 col-md-2">
-                <div className="card-body">
-                  <img class="comp-icon" src={comp4} alt="" />
-
-                  <div className="card-title"> Mentalidad digital</div>
-                </div>
-              </div>
-              <div className="card col-sm-6 col-md-2">
-                <div className="card-body">
-                  <img class="comp-icon" src={comp5} alt="" />
-                  <div className="card-title">Foco en data</div>
-                </div>
-              </div>
+                ))}
             </div>
           </div>
           <div className="col-12 col-md-6 banner-img">
-            <img class="w-100" src={mainImg} alt="Intercorp Entrénate" />
+            <img className="w-100" src={mainImg} alt="Intercorp Entrénate" />
           </div>
         </div>
       </div>
