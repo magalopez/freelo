@@ -1,13 +1,12 @@
 import React from "react";
 import Swiper from "react-id-swiper";
+import { useHistory } from "react-router-dom";
 import Card from "./Card";
 
-export default function({ sliderContent, sliderTitle }) {
+
+export default function({ sliderContent, sliderTitle, sliderType }) {
   const data = Array.from(sliderContent);
   const params = {
-    slidesPerView: 4,
-    spaceBetween: 30,
-    slidesPerGroup: 3,
     loop: true,
     loopFillGroupWithBlank: false,
     // pagination: {
@@ -37,6 +36,12 @@ export default function({ sliderContent, sliderTitle }) {
       }
     }
   };
+  let history = useHistory();
+
+  const goToPage = (id, type) => {
+    history.push(`/${type}/${id}`)
+  }
+
   return (
     <div class="slider-container">
       <div class="slider-title">
@@ -48,7 +53,7 @@ export default function({ sliderContent, sliderTitle }) {
         {data &&
           data.map((el, i) => (
             // <Card img={el.image_url} content={el.content} />
-            <div className="card" key={i}>
+            <div className="card slide-card" key={i} onClick ={() => goToPage(el.id, el.type)} >
               <img src={el.image_url} className="card-img-top" alt="..." />
               <div className="card-body">
                 <p className="card-text montserrat-r">{el.Author}</p>

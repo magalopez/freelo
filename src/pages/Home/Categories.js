@@ -32,19 +32,19 @@ export default function() {
   return (
     <>
       <div className="container mw-100 banner-container">
-        <div className="row">
+        <div className="row main-row">
           <div className="col-12 col-md-6 banner-text">
             <div className="text-content my-3">
-              <h1 class="montserrat-b">Entrénate</h1>
+              <h1 className="montserrat-b">Entrénate</h1>
               <hr />
-              <h4 class="montserrat-rb">
+              <h4 className="montserrat-rb">
                 ¿qué competencia D3EC quieres reforzar hoy?
               </h4>
             </div>
             <div className="row categories-content">
               {competencies &&
-                competencies.map(el => (
-                  <div className="card-container col-6 col-md-2">
+                competencies.map((el, i) => (
+                  <div className="card-container col-6 col-md-2" key={i}>
                     <div className="card ">
                       <div className="card-body">
                         <img className="comp-icon" src={el.img} alt="" />

@@ -1,0 +1,47 @@
+.page-leaders {
+  header {
+    background-color: $dark !important;
+    .navbar {
+      .navbar-collapse.show {
+        background-color: $dark;
+      }
+    }
+  }
+  .banner-container {
+    // height: 50vh;
+    padding-left: 12%;
+
+    .banner-row {
+    //   height: 100%;
+      .banner-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+      }
+      .banner-img {
+        display: none;
+        height: 50vh;
+        padding: 0;
+        img {
+            border-bottom-right-radius: 115px;
+          border-top-left-radius: 115px;
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          background-size: contain;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+      .banner-container{
+          .banner-row{
+              .banner-img{
+                  display: block;
+              }
+          }
+      }
+  }
+}
