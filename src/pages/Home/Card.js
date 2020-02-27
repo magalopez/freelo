@@ -7,7 +7,7 @@ export default function({ img, author, title }) {
         <img src={img} className="card-img-top" alt="..." />
         <div className="card-body">
           <p className="card-text">{author}</p>
-          <h5 class="card-title">{title}</h5>
+          <h5 className="card-title">{title}</h5>
         </div>
       </div>
     </>

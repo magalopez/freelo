@@ -43,10 +43,10 @@ export default function({ sliderContent, sliderTitle, sliderType }) {
   }
 
   return (
-    <div class="slider-container">
-      <div class="slider-title">
-        <h3 class="title-main montserrat-b section-cat-title">{sliderTitle}</h3>
-        <hr class="slider-title-hr"/>
+    <div className="slider-container">
+      <div className="slider-title">
+        <h3 className="title-main montserrat-b section-cat-title">{sliderTitle}</h3>
+        <hr className="slider-title-hr"/>
       </div>
 
       <Swiper {...params}>

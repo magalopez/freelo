@@ -1,4 +1,7 @@
+@import "_variables";
+
 .page-leaders {
+  overflow-x: hidden;
   header {
     background-color: $dark !important;
     .navbar {
@@ -7,41 +10,98 @@
       }
     }
   }
+  .banner-background {
+    @include bg-banner(60vh, $dark, 0, 0);
+  }
   .banner-container {
-    // height: 50vh;
-    padding-left: 12%;
+    // padding-left: 12%;
 
     .banner-row {
-    //   height: 100%;
+      //   height: 100%;
       .banner-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 50vh;
+        color: $white;
+        padding-right: 0;
+        @include div-flex(column, center, center);
+        height: 55vh;
+        .banner-leader-info {
+          background-color: $white;
+          color: $dark;
+          margin: 5% 0;
+          padding: 5%;
+          border-radius: 2em 0 2em 0;
+          width: 100%;
+        }
       }
       .banner-img {
         display: none;
-        height: 50vh;
+        height: 55vh;
         padding: 0;
         img {
-            border-bottom-right-radius: 115px;
+          border-bottom-right-radius: 115px;
           border-top-left-radius: 115px;
-          height: 100%;
-          width: 100%;
+          height: 120%;
+          width: 64vw;
+          margin-top: -95px;
           object-fit: cover;
           background-size: contain;
         }
       }
     }
   }
-  @media screen and (min-width: 768px) {
-      .banner-container{
-          .banner-row{
-              .banner-img{
-                  display: block;
-              }
+
+  .main-leaders {
+    .main-row {
+      .leaders-recommend {
+        .title-recommend {
+          hr {
+            @include hr-title($blue, auto);
           }
+        }
+        .leader-post {
+          //   padding: 5%;
+          background-color: $soft-blue;
+          border-radius: 1em;
+          .post-img {
+            justify-content: center;
+            img {
+              height: 25rem;
+              width: 75%;
+              object-fit: cover;
+            }
+          }
+          .post-content {
+          }
+        }
       }
+      .leaders-more {
+          .container-more {
+            background-color: $soft-blue;
+          .box-recommend {
+            height: 10rem;
+            .box-r-img {
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+        //   height: 100vh;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .banner-background {
+      @include bg-banner(60vh, $dark, 115px, 115px);
+    }
+    .banner-container {
+      .banner-row {
+        .banner-img {
+          display: block;
+        }
+      }
+    }
   }
 }

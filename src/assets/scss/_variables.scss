@@ -2,8 +2,10 @@
 
 $yellow: #ffc102;
 $yellow-ucic: #ecc413;
-$soft-blue: #908490;
+// $soft-blue: #908490;
+$soft-blue: #e9ecef;
 $blue: #348fdd;
+$dark-blue: #052cb9;
 $white: #fff;
 $dark: #282627;
 $gray: #727272;
@@ -43,8 +45,36 @@ $black: #000;
   border-top: 0.2rem solid $colortop;
 }
 
+@mixin bg-banner($height, $color, $r-right, $r-left) {
+  background-color: $color;
+  height: $height;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-bottom-right-radius: $r-right;
+  border-bottom-left-radius: $r-left;
+}
+
+@mixin div-flex($direction, $justif, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justif;
+  align-items: $align;
+}
+
+@mixin hr-title ($color, $ml) {
+  border-top: 0.3rem solid $color;
+  width: 3.3rem;
+  border-radius: 2rem;
+  margin-top: 0;
+  margin-left: $ml;
+}
+
+// media
+
 @media (min-width: 768px) {
   .section-cat-title {
-    font-size: 3.125rem;
+    font-size: 3.75rem;
   }
 }

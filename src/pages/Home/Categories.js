@@ -31,7 +31,11 @@ export default function() {
   ];
   return (
     <>
-      <div className="container mw-100 banner-container">
+    <div className="banner-background w-100">
+      <div className="banner-color">
+      </div>
+    </div>
+      <div className="container banner-container">
         <div className="row main-row">
           <div className="col-12 col-md-6 banner-text">
             <div className="text-content my-3">

@@ -4,54 +4,54 @@ import logoIntercorpWhite from "../assets/img/logo-intercorp-blanco.png";
 export default function() {
   return (
     <>
-      <footer class="pt-5">
-        <div class="pt-5 py-md-4 pt-md-5  container">
-          <div class="row">
-            <div class="col-12 col-md-8">
-              <div class="row">
-                <div class="col-6 col-md">
-                  <h5 class="text-white">Crece</h5>
+      <footer className="pt-5">
+        <div className="pt-5 py-md-4 pt-md-5  container">
+          <div className="row">
+            <div className="col-12 col-md-8">
+              <div className="row">
+                <div className="col-6 col-md">
+                  <h5 className="text-white">Crece</h5>
                 </div>
-                <div class="col-6 col-md">
-                  <h5 class="text-white">Entrénate</h5>
-                  <ul class="list-unstyled text-small">
+                <div className="col-6 col-md">
+                  <h5 className="text-white">Entrénate</h5>
+                  <ul className="list-unstyled text-small">
                     <li>
-                      <a class=" text-gray" href="#">
+                      <a className=" text-gray" href="#">
                         Lorem
                       </a>
                     </li>
                     <li>
-                      <a class=" text-gray" href="#">
+                      <a className=" text-gray" href="#">
                         Lorem Ipsum
                       </a>
                     </li>
                   </ul>
                 </div>
-                <div class="col-6 col-md">
-                  <h5 class="text-white">Entérate</h5>
-                  <ul class="list-unstyled text-small">
+                <div className="col-6 col-md">
+                  <h5 className="text-white">Entérate</h5>
+                  <ul className="list-unstyled text-small">
                     <li>
-                      <a class=" text-gray" href="#">
+                      <a className=" text-gray" href="#">
                         Lorem
                       </a>
                     </li>
                     <li>
-                      <a class=" text-gray" href="#">
+                      <a className=" text-gray" href="#">
                         Lorem Ipsum
                       </a>
                     </li>
                   </ul>
                 </div>
-                <div class="col-6 col-md">
-                  <h5 class="text-white">Benefíciate</h5>
-                  <ul class="list-unstyled text-small">
+                <div className="col-6 col-md">
+                  <h5 className="text-white">Benefíciate</h5>
+                  <ul className="list-unstyled text-small">
                     <li>
-                      <a class=" text-gray" href="#">
+                      <a className=" text-gray" href="#">
                         Lorem
                       </a>
                     </li>
                     <li>
-                      <a class=" text-gray" href="#">
+                      <a className=" text-gray" href="#">
                         Lorem Ipsum
                       </a>
                     </li>
@@ -59,18 +59,18 @@ export default function() {
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md footer__logo d-flex">
+            <div className="col-12 col-md footer__logo d-flex">
               <img
-                class="mb-2"
+                className="mb-2"
                 src={logoIntercorpWhite}
                 alt=""
                 style={{ height: "1.8rem" }}
               />
             </div>
           </div>
-          <div class="pt-5">
-            <hr class="border-top-white" />
-            <p class="text-gray m-0 p-2 text-center">
+          <div className="pt-5">
+            <hr className="border-top-white" />
+            <p className="text-gray m-0 p-2 text-center">
               2020 Somos Intercorp. Todos los derechos reservados.
             </p>
           </div>

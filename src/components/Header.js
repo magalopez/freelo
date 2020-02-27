@@ -4,7 +4,7 @@ import logoIntercorpWhite from "../assets/img/logo-intercorp-blanco.png";
 export default function() {
   return (
     <>
-      <header>
+      <header className="container">
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <a className="navbar-brand" href="#">
             <img src={logoIntercorpWhite} alt="Logo white Intercorp" />

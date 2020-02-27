@@ -16,14 +16,14 @@ header {
     }
     .navbar-collapse {
       ul {
-        li.nav-item{
+        li.nav-item {
           a.nav-link {
             color: $white;
             font-weight: 700;
           }
         }
         li.nav-item.active {
-          text-decoration: underline solid ;
+          text-decoration: underline solid;
         }
       }
     }
@@ -73,3 +73,14 @@ footer {
     color: $gray;
   }
 }
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+@media (min-width: 1800px) {
+  .container {
+    max-width: 1600px;
+  }
+} 
