@@ -1,0 +1,71 @@
+[
+  {
+    "id": "1",
+    "name": "Carlos",
+    "lastname": "Montalván",
+    "role": "leader",
+    "position": "CEO UCIC",
+    "image_url": "../img/leaders/cm/carlos_montalvan.jpg",
+    "type": "leaders",
+    "posts": [
+      {
+        "date": "23/03/2020",
+        "title": "The Fearless Organization",
+        "image_url": "../img/leaders/cm/book1.jpg",
+        "content": "“...offers practical guidance for teams and organizations who are serious about success in the modern economy. With so much riding on innovation, creativity, and spark, it is essential to attract and retain quality talent—but what good does this talent do if no one is able to speak their mind?”"
+      },
+      {
+        "date": "20/03/2020",
+        "title": "The Next 100 Years",
+        "image_url": "../img/leaders/cm/book2.jpg",
+        "content": "Espera lo imposible. Friedman proyecta cómo se movería la geopolítica, militarismo y economía del mundo en lo que resta del siglo XXI. El downside es que se publicó en el 2009, solo dos años después del lanzamiento del smartphone, por lo que no captura la fuerza de la infotech (ni de China)."
+      },
+      {
+        "date": "25/03/2020",
+        "title": "21 Lessons for the 21st Century",
+        "image_url": "../img/leaders/cm/book3.jpg",
+        "content": "Nuevo e interesante libro que explora cómo nos impactará la combinación de la biotecnología y la info tecnología. No solo a nivel del mercado laboral, sino regímenes políticos, privacidad personal, y ética."
+      },
+      {
+        "date": "25/03/2020",
+        "title": "Data Science",
+        "image_url": "../img/leaders/cm/book4.jpg",
+        "content": "Se habla mucho sobre Data Science. Este libro da una introducción exhaustiva al tema, a sus definiciones y al potencial aplicado, usando un lenguaje al alcance de quienes no somos científicos."
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Ramón",
+    "lastname": "Barúa",
+    "role": "leader",
+    "position": "Board Member Intercorp",
+    "image_url": "../img/leaders/rb/ramon_barua.jpg",
+    "type": "leaders",
+    "posts": [
+      {
+        "date": "25/03/2020",
+        "title": "Thank You for Being Late",
+        "image_url": "../img/leaders/rb/book1.jpg",
+        "content": "¡Libro muy inspirador!"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Hernán",
+    "lastname": "Carranza",
+    "role": "leader",
+    "position": "CIO Intercorp",
+    "image_url": "../img/leaders/hc/hernan_carranza.jpg",
+    "type": "leaders",
+    "posts": [
+      {
+        "date": "25/03/2020",
+        "title": "Thank You for Being Late",
+        "image_url": "../img/leaders/hc/book1.jpg",
+        "content": "¡Libro muy inspirador!"
+      }
+    ]
+  }
+]

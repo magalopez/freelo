@@ -7,9 +7,9 @@ import {
   useParams
 } from "react-router-dom";
 
-import Home from "./pages/Home";
-import Videos from "./pages/Videos";
-import Leaders from "./pages/Leaders";
+import Home from "./components/Home";
+import Videos from "./components/Videos";
+import Leaders from "./components/Leaders";
 // import logo from './logo.svg';
 import "./App.css";
 

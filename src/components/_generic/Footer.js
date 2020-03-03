@@ -1,5 +1,5 @@
 import React from "react";
-import logoIntercorpWhite from "../assets/img/logo-intercorp-blanco.png";
+import logoIntercorpWhite from "../../assets/img/logo-intercorp-blanco.png";
 
 export default function() {
   return (

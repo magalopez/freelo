@@ -1,13 +1,13 @@
 import React from "react";
-import Header from "../../components/Header";
-import NavBar from "../../components/NavBar";
-import Footer from "../../components/Footer";
+import Header from "../_generic/Header";
+import NavBar from "../_generic/NavBar";
+import Footer from "../_generic/Footer";
 import Categories from "./Categories";
 import Content from "./Content.js";
 import video from "../../assets/img/video.png";
 
 export default function() {
-  const news = [
+  const news = [    
     {
       image_url: video,
       content: "Toma de decisiones con data",
