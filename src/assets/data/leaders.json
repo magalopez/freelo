@@ -9,26 +9,34 @@
     "type": "leaders",
     "posts": [
       {
-        "date": "23/03/2020",
+        "id": 1,
+        "published_date": "23/03/2020",
         "title": "The Fearless Organization",
+        "author": "Amy C. Edmondson",
         "image_url": "../img/leaders/cm/book1.jpg",
         "content": "“...offers practical guidance for teams and organizations who are serious about success in the modern economy. With so much riding on innovation, creativity, and spark, it is essential to attract and retain quality talent—but what good does this talent do if no one is able to speak their mind?”"
       },
       {
-        "date": "20/03/2020",
+        "id": 2,
+        "published_date": "20/03/2020",
         "title": "The Next 100 Years",
+        "author": "George Friedman",
         "image_url": "../img/leaders/cm/book2.jpg",
         "content": "Espera lo imposible. Friedman proyecta cómo se movería la geopolítica, militarismo y economía del mundo en lo que resta del siglo XXI. El downside es que se publicó en el 2009, solo dos años después del lanzamiento del smartphone, por lo que no captura la fuerza de la infotech (ni de China)."
       },
       {
-        "date": "25/03/2020",
+        "id": 3,
+        "published_date": "25/03/2020",
         "title": "21 Lessons for the 21st Century",
+        "author": "Yuval Noah Harari",
         "image_url": "../img/leaders/cm/book3.jpg",
         "content": "Nuevo e interesante libro que explora cómo nos impactará la combinación de la biotecnología y la info tecnología. No solo a nivel del mercado laboral, sino regímenes políticos, privacidad personal, y ética."
       },
       {
-        "date": "25/03/2020",
+        "id": 4,
+        "published_date": "25/03/2020",
         "title": "Data Science",
+        "author": "John D. Kelleher / And Brendan ",
         "image_url": "../img/leaders/cm/book4.jpg",
         "content": "Se habla mucho sobre Data Science. Este libro da una introducción exhaustiva al tema, a sus definiciones y al potencial aplicado, usando un lenguaje al alcance de quienes no somos científicos."
       }
@@ -44,8 +52,10 @@
     "type": "leaders",
     "posts": [
       {
-        "date": "25/03/2020",
+        "id": 1,
+        "published_date": "25/03/2020",
         "title": "Thank You for Being Late",
+        "author": "Thomas L. Friedman",
         "image_url": "../img/leaders/rb/book1.jpg",
         "content": "¡Libro muy inspirador!"
       }
@@ -61,10 +71,98 @@
     "type": "leaders",
     "posts": [
       {
-        "date": "25/03/2020",
-        "title": "Thank You for Being Late",
+        "id": 1,
+        "published_date": "25/03/2020",
+        "title": "Grit",
+        "author": "Angela Duckworth",
         "image_url": "../img/leaders/hc/book1.jpg",
-        "content": "¡Libro muy inspirador!"
+        "content": "Grit, de Angela Duckworth. Leí el libro el año pasado (2017) y confirma mi hipótesis de que “las ganas” es lo más importante para progresar como profesionales y para lograr big achievements. En la misma línea con Carol Dweck y su teoría del “growth mindset”, Duckworth sostiene que éxito profesional solamente tiene una pequeña dosis de talento –que solo es el punto de partida– y una dosis enorme de esfuerzo –que es el elemento acelerador y amplificador a lo largo de nuestras carreras. Me gustó mucho el libro además porque la autora ha sido profesora y enfoca la narrativa desde el ángulo del aprendizaje y la educación. Hay un Ted Talk llamado “the power of passion and perseverance” que resume lo que uno aprende en el libro."
+      },
+      {
+        "id": 2,
+        "published_date": "25/03/2020",
+        "title": "Drive",
+        "author": "Daniel H. Pink",
+        "image_url": "../img/leaders/hc/book2.jpg",
+        "content": "Drive, de Daniel Pink. Leí el libro en 2011 y hasta ahora uso los aprendizajes. Pink identifica las 3 motivaciones principales de toda persona: purpose, mastery, y autonomy, y explica cómo podemos optimizar nuestro rol como profesionales y como líderes para optimizar estos tres elementos. Me ha servido muchísimo para comprender los factores que más me movilizan a mí personalmente en la chamba, y también para entender cuál es el mix de factores de motivan a las personas de mi equipo, e intentar fomentarlos en la medida de lo posible. "
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Juan Alberto",
+    "lastname": "Franco",
+    "role": "leader",
+    "position": "Board Member NGR",
+    "image_url": "../img/leaders/jaf/juanalberto_franco.jpg",
+    "type": "leaders",
+    "posts": [
+      {
+        "id": 1,
+        "published_date": "25/03/2020",
+        "title": "Mindset: The New Psychology of Success",
+        "author": "ACarol Dweck",
+        "image_url": "../img/leaders/hc/book1.jpg",
+        "content": "-fixed vs growth mindsets-make sure you have the right type for each kind of task "
+      },
+      {
+        "id": 2,
+        "published_date": "25/03/2020",
+        "title": "Good to Great",
+        "author": "Jim Collins",
+        "image_url": "../img/leaders/hc/book2.jpg",
+        "content": "A great leader always puts the Company´s ambition before its own ambition. First who then what. Disciplined people, disciplined thought, disciplined action. Find the combination of: what passionate you the most, where you can be the best at, and what moves the “Economic Engine”"
+      },
+      {
+        "id": 3,
+        "published_date": "25/03/2020",
+        "title": "Extreme Owership",
+        "author": "Jocko Willink / Leif Babin",
+        "image_url": "../img/leaders/hc/book3.jpg",
+        "content": "Don´t look around, you are the boss, it is always your fault !. Evaluate, prioritize, execute, ….. (repeat). Discipline = Freedom (the more disciplined your team is, the more freedom you can give them) "
+      },
+      {
+        "id": 4,
+        "published_date": "25/03/2020",
+        "title": "Principles",
+        "author": "Ray Dalio",
+        "image_url": "../img/leaders/hc/book4.jpg",
+        "content": "Don´t worry about looking good (in your organization), but be obsessed with meeting your goals. At some point you should start caring more about having the people you care succeed that succeeding yourself. Make sure the individual´s incentives are aligned with the Group´s goals "
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Zelma",
+    "lastname": "Acosta-Rubio",
+    "role": "leader",
+    "position": "CDO Intercorp",
+    "image_url": "../img/leaders/zar/zalma_acotarubio.jpg",
+    "type": "leaders",
+    "posts": [
+      {
+        "id": 1,
+        "published_date": "25/03/2020",
+        "title": "Exponential Organizations",
+        "author": "Salim Ismail",
+        "image_url": "../img/leaders/zar/book1.jpg",
+        "content": "Crecimiento exponencial: ¿El nuevo normal? Estas empresas crecen hasta 10x más q sus competidores. 🙋🏻‍♀️Releyendo! "
+      },
+      {
+        "id": 2,
+        "published_date": "25/03/2020",
+        "title": "Grit",
+        "author": "Angela Duckworth",
+        "image_url": "../img/leaders/zar/book2.jpg",
+        "content": "Tengo Talento ¿Cómo logro mis objetivos a largo plazo? Si se han hecho esa pregunta en algún momento, recomiendo GRIT.  \\n La teoría de la psicología de los logros que propone la autora - Angela Duckworth - me hace evocar una típica frase de mis padres: “cultiva tu talento”, pero sólo cuando leí GRIT, entendí que, “cultivar tu talento” requiere dos ecuaciones: \\n La primera: [talento x esfuerzo = habilidad]. \\n La segunda ecuación, construye sobre la primera:  [habilidad x esfuerzo = logro]. \\n En corto, GRIT se define como la tendencia a mantener el interés \\n y esfuerzo de manera dedicada hacia un logro de largo plazo. Entendiendo capacidad innata o \\n talento como la “rapidez con que las habilidades mejoran con el esfuerzo.” Con lo cual, puedes \\n tener talento para X pero son la constancia, perseverancia y dedicación las palancas que te llevan a lograr los objetivos de largo plazo. \\n Duckworth desarrolló La Escala del Grit que en 10 preguntas nos ayuda a responder: ¿Cuán apasionados y perseverantes somos? \\n Finalmente, las personas con altos niveles de GRIT tienen en común cuatro cualidades psicológicas: el interés, la capacidad de practicar, el propósito, y la esperanza. La autora nos invita en su libro a explorar cómo podemos desarrollar estas cuatro cualidades."
+      },
+      {
+        "id": 3,
+        "published_date": "25/03/2020",
+        "title": "Mindset: The New Psychology of Success",
+        "author": "Carol Dweck",
+        "image_url": "../img/leaders/zar/book3.jpg",
+        "content": "No te limites por el talento que no tienes! \\n Mindset, libro clave para gestionar equipos y muy relevante para quienes tenemos hij@s! Dweck introdujo los términos de mentalidad fija y mentalidad de crecimiento para explicar la forma cómo aprendemos. Por ejemplo, cuando los estudiantes creen que pueden ser más inteligentes, entienden que el esfuerzo los fortalece y, por tanto, dedican mayor tiempo al esfuerzo, lo que resulta en un mayor rendimiento. En corto - mentalidad de crecimiento - es creer que eres capaz de cambiar y crecer y afrontar los contratiempos como una piedrita temporal para lograr tus objetivos💪🌻 "
       }
     ]
   }
