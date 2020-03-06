@@ -53,6 +53,7 @@
     .main-row {
       .leaders-recommend {
         .title-recommend {
+          padding-top: 2rem;
           hr {
             @include hr-title($blue, auto);
           }
@@ -62,11 +63,11 @@
           background-color: $soft-blue;
           border-radius: 1em;
           .post-img {
-            justify-content: center;
+            @include div-flex(column, center, center);
             img {
               height: 25rem;
               width: 75%;
-              object-fit: cover;
+              object-fit: contain;
             }
           }
           .post-content {
@@ -74,14 +75,26 @@
         }
       }
       .leaders-more {
-          .container-more {
-            background-color: $soft-blue;
+        .title-recommend {
+          visibility: hidden;
+          padding-top: 2rem;
+          hr {
+            @include hr-title($blue, auto);
+          }
+        }
+        .container-more {
+          // border-radius: 15px;
+          .see-more-title {
+            hr {
+              @include hr-title($yellow, 0);
+            }
+          }
           .box-recommend {
             height: 10rem;
             .box-r-img {
               img {
                 width: 100%;
-                height: 100%;
+                height: 190px;
                 object-fit: cover;
               }
             }

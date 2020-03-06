@@ -22,18 +22,10 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/home">
-          <Home />
-        </Route>
-        <Route exact path="/videos/:slug">
-          <Videos />
-        </Route>
-        <Route exact path="/leaders/:slug">
-          <Leaders />
-        </Route>
+        <Route exact path="/"  component = {Home}/>
+        <Route exact path="/home"  component = {Home}/>
+        <Route exact path="/videos/:slug" component = {Videos}/>
+        <Route exact path="/leaders/:slug"  component = {Leaders}/>
       </Switch>
     </BrowserRouter>
   );

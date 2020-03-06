@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Swiper from "react-id-swiper";
 import { useHistory } from "react-router-dom";
 import Card from "./Card";
-
+import video from "../../assets/img/video.png";
 
 export default function({ sliderContent, sliderTitle, sliderType }) {
-  const data = Array.from(sliderContent);
+  const data = Array.from(sliderContent.data);
   const params = {
     loop: true,
     loopFillGroupWithBlank: false,
@@ -37,30 +37,45 @@ export default function({ sliderContent, sliderTitle, sliderType }) {
     }
   };
   let history = useHistory();
-
   const goToPage = (id, type) => {
-    history.push(`/${type}/${id}`)
-  }
+    history.push(`/${type}/${id}`);
+  };
 
   return (
     <div className="slider-container">
       <div className="slider-title">
-        <h3 className="title-main montserrat-b section-cat-title">{sliderTitle}</h3>
-        <hr className="slider-title-hr"/>
+        <h3 className="title-main montserrat-b section-cat-title">
+          {sliderTitle}
+        </h3>
+        <hr className="slider-title-hr" />
       </div>
 
       <Swiper {...params}>
         {data &&
-          data.map((el, i) => (
-            // <Card img={el.image_url} content={el.content} />
-            <div className="card slide-card" key={i} onClick ={() => goToPage(el.id, el.type)} >
-              <img src={el.image_url} className="card-img-top" alt="..." />
-              <div className="card-body">
-                <p className="card-text montserrat-r">{el.Author}</p>
-                <h5 className="card-title montserrat-b">{el.content}</h5>
+          data.map((el, i) => {
+            const leaderImg =
+              sliderContent.type !== "leaders"
+                ? video
+                : require(`../../assets/img/leaders/leaders_${el.id}.jpg`);
+            return (
+              <div
+                className="card slide-card"
+                key={i}
+                onClick={() => goToPage(el.id, sliderContent.type)}
+              >
+                <img className="card-img-top" src={leaderImg} alt="..." />
+
+                <div className="card-body">
+                  <p className="card-text montserrat-r">
+                    {el.Author || el.position}
+                  </p>
+                  <h5 className="card-title montserrat-b">
+                    {el.content || el.name + " " + el.lastname}
+                  </h5>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
       </Swiper>
     </div>
   );

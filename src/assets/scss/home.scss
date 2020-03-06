@@ -107,6 +107,10 @@
       .card {
         height: 18rem;
         cursor: pointer;
+        .card-img-top {
+          height: 50%;
+          object-fit: cover;
+        }
       }
     }
   }
