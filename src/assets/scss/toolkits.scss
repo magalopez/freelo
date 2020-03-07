@@ -9,6 +9,14 @@
     z-index: -1;
   }
 
+  @include media (desktopmini) {
+
+    .banner-background {
+      @include bg-banner(40vh, $yellow, 0, 115px);
+    }
+
+  }
+
   .banner-content {
     display: flex;
     align-items: center;
@@ -104,19 +112,65 @@
   .more-tools {
     width: 100%;
 
-    @include media (desktopmini) {
+    // background: #F7F8FC;
+    h2 {
+      margin-bottom: 32px;
 
+    }
+
+    @include media (desktopmini) {
+      // border-left: 1px solid rgba(0, 0, 0, 0.1);
       margin-left: col(2, 35);
       width: col(13, 35);
+      padding: 0 32px;
+    }
+
+    .cardTool {
+
+      box-shadow: 0px 0px 10px rgba(163, 171, 204, 0.12);
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      padding: 10px 30px;
+      margin: auto;
+      margin-bottom: 32px;
+
+      @include media (desktopmini) {
+        max-width: col(8, 11);
+      }
+
+      .icon-equality {
+        align-self: center;
+      }
+
+      p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        color: #494F66;
+        margin: 16px 0;
+      }
+
+      span {
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+        color: #939DFF;
+        align-self: center;
+        margin: 4px 0px;
+        font-size: 10px;
+      }
+
+
+    }
+
+    .cardTool:hover {
+      box-shadow: 0px 8px 30px rgba(20, 43, 127, 0.1), 0px 1px 4px rgba(163, 171, 204, 0.06);
+      border-radius: 12px;
     }
   }
 
 
-  @include media (desktopmini) {
 
-    .banner-background {
-      @include bg-banner(40vh, $yellow, 0, 115px);
-    }
-
-  }
 }
