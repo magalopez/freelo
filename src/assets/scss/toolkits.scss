@@ -1,21 +1,18 @@
 .page-toolkits {
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
-
   .content-centered {
     margin-right: col(1, 37);
     margin-left: col(1, 37);
   }
 
   .banner-background {
-    @include bg-banner(50vh, $yellow, 0, 0);
+    @include bg-banner(40vh, $yellow, 0, 0);
     z-index: -1;
   }
 
   .banner-content {
     display: flex;
     align-items: center;
+    height: 40vh;
 
     &__text {
       margin-right: auto;
@@ -33,30 +30,87 @@
         margin-left: 0;
       }
     }
+
+    .icon-meeting {
+      display: none;
+
+      @include media (desktopmini) {
+        display: block;
+      }
+    }
   }
 
-  .banner-container {
-    // border-bottom-left-radius: 115px;
+  .tool-template {
+    width: 100%;
 
-    .banner-text {
-      .text-content {
-        h1 {
-          font-size: 3.2rem;
+    @include media (desktopmini) {
+      width: col(20, 35);
+    }
+
+    h2 {
+      margin-bottom: 16px;
+    }
+
+    p {
+      margin-bottom: 48px;
+      text-align: justify;
+
+      @include media (desktopmini) {
+        margin-bottom: 64px;
+      }
+    }
+
+    iframe {
+      margin-bottom: 80px;
+    }
+
+    hr {
+      margin-bottom: 64px;
+    }
+
+    .download {
+      margin-bottom: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include media (desktopmini) {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      button {
+        background: $yellow;
+        border-radius: 15px;
+        width: 200px;
+        height: 100px;
+        border: none;
+        color: white;
+        font-weight: 600;
+        margin-bottom: 16px;
+
+        @include media (desktopmini) {
+          margin-bottom: 0;
         }
       }
-    }
 
-    .banner-img {
-      display: block;
-
-      img {
-        height: 120%;
-        margin-top: -95px;
-        z-index: -1;
-        width: 58vw !important;
+      button:hover {
+        background: $yellow;
+        box-shadow: 0px 4px 10px rgba(20, 43, 127, 0.25);
       }
     }
   }
+
+  .more-tools {
+    width: 100%;
+
+    @include media (desktopmini) {
+
+      margin-left: col(2, 35);
+      width: col(13, 35);
+    }
+  }
+
 
   @include media (desktopmini) {
 
@@ -64,9 +118,5 @@
       @include bg-banner(40vh, $yellow, 0, 115px);
     }
 
-    .banner-content {
-      height: 40vh;
-
-    }
   }
 }

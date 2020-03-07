@@ -65,18 +65,21 @@ $xlarge-screen: 1360px;
   }
 }
 
-.row {
-  margin-left: auto;
-  margin-right: auto;
+.row-sass {
+  display: flex;
+  flex-wrap: wrap;
+  // margin-left: auto;
+  // margin-right: auto;
+  // margin: 0 !important
 }
 
-.row:after {
+.row-sass:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.row .col {
+.row-sass .col-sass {
   float: left;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
