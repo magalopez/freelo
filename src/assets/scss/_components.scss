@@ -1,19 +1,23 @@
-@import "_variables";
+// @import "_variables";
 
 header {
   height: 5rem;
   padding: 1rem 12%;
+
   .navbar {
     background-color: transparent !important;
     z-index: 1;
     padding: 0;
+
     .navbar-brand {
       padding: 0;
       height: 1.8rem;
+
       img {
         height: 100%;
       }
     }
+
     .navbar-collapse {
       ul {
         li.nav-item {
@@ -22,11 +26,13 @@ header {
             font-weight: 700;
           }
         }
+
         li.nav-item.active {
           text-decoration: underline solid;
         }
       }
     }
+
     .navbar-collapse.show {
       background-color: $yellow;
       margin: 0px -10%;
@@ -35,14 +41,17 @@ header {
       z-index: 2;
       overflow: hidden;
     }
+
     .navbar-collapse.collapsing {
       transition: height 0s ease !important;
     }
   }
+
   @media (min-width: 992px) {
     .navbar-expand-lg .navbar-collapse {
       justify-content: flex-end;
     }
+
     .navbar-collapse.show {
       background-color: transparent !important;
       margin: auto !important;
@@ -50,6 +59,7 @@ header {
       height: auto !important;
       z-index: 2 !important;
       overflow: inherit !important;
+
       .dropdown-menu {
         background-color: white;
       }
@@ -65,10 +75,12 @@ footer {
   align-items: center;
   padding: 0 8% 0% 8%;
   @include footer(6rem, null, $white);
+
   p {
     margin: 0;
     color: $white !important;
   }
+
   a {
     color: $gray;
   }
@@ -79,8 +91,9 @@ footer {
     max-width: 1400px;
   }
 }
+
 @media (min-width: 1800px) {
   .container {
     max-width: 1600px;
   }
-} 
+}

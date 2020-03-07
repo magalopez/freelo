@@ -1,15 +1,19 @@
-@import "_variables";
+// @import "_variables";
 .page-home {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
+
   header {
     background-color: $yellow;
   }
+
   .banner-background {
     @include bg-banner(115vh, $yellow, 0, 0);
   }
+
   .banner-container {
+
     // position: relative;
     // top: -80px;
     // background-color: $yellow;
@@ -20,18 +24,22 @@
       // top: 80px;
       padding-top: 80px;
       padding-bottom: 80px;
+
       .banner-text {
         // padding: 0;
         @include div-flex(column, center, flex-start);
         color: $dark;
+
         .text-content {
           h1 {
             font-size: 2em;
           }
+
           hr {
             @include hr-title($blue, 0);
           }
         }
+
         .categories-content {
           // z-index: 2;
           height: auto;
@@ -42,24 +50,30 @@
               border-top-left-radius: 50px;
             }
           }
+
           &:last-child {
             .card {
               border-bottom-right-radius: 50px;
             }
           }
+
           .card-container {
             padding-right: 10px;
             padding-top: 3%;
+
             .card {
               height: 100%;
               box-shadow: 0 2px 15px -1px #00000042;
+
               // border-radius: 25px;
               .card-body {
                 @include div-flex(column, center, center);
                 padding: 0.25rem;
+
                 .comp-icon {
                   width: 40%;
                 }
+
                 .card-title {
                   font-size: 0.9rem;
                   text-align: center;
@@ -70,10 +84,12 @@
           }
         }
       }
+
       .banner-img {
         display: none;
         height: 80vh;
         padding: 0;
+
         img {
           border-bottom-right-radius: 115px;
           border-top-left-radius: 115px;
@@ -87,9 +103,11 @@
   }
 
   .main-home {
+
     // padding: 5% 12%;
     .slider-container {
       padding: 5% 0;
+
       // padding-right: 8%;
       .slider-title {
         padding: 1rem 0 1.5rem;
@@ -97,13 +115,16 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
+
         .title-main {
           text-align: center;
         }
+
         .slider-title-hr {
           @include hr-title($yellow, auto);
         }
       }
+
       .card {
         height: 18rem;
         cursor: pointer;
@@ -118,9 +139,11 @@
 
     .banner-container {
       border-bottom-left-radius: 115px;
+
       .main-row {
         padding-top: 0;
         padding-bottom: 0;
+
         // margin: auto;
         .banner-text {
           .text-content {
@@ -128,17 +151,21 @@
               font-size: 3.2rem;
             }
           }
+
           .categories-content {
             width: 95vw;
             z-index: 1;
           }
+
           .card-container {
             .card {
               .card-body {
                 padding: 1.25rem !important;
+
                 .comp-icon {
                   width: 60% !important;
                 }
+
                 .card-title {
                   font-size: 1.1rem !important;
                 }
@@ -146,8 +173,10 @@
             }
           }
         }
+
         .banner-img {
           display: block;
+
           img {
             height: 120%;
             margin-top: -95px;
@@ -164,6 +193,7 @@
       height: 105%;
       width: 50vw !important;
     }
+
     .categories-content {
       width: 80vw !important;
     }
@@ -179,6 +209,7 @@
             }
           }
         }
+
         .banner-img {
           img {
             width: 45vw !important;
@@ -198,6 +229,7 @@
             }
           }
         }
+
         .banner-img {
           img {
             width: 50vw !important;

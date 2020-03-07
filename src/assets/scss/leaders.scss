@@ -1,28 +1,34 @@
-@import "_variables";
+// @import "_variables";
 
 .page-leaders {
   overflow-x: hidden;
+
   header {
     background-color: $dark !important;
+
     .navbar {
       .navbar-collapse.show {
         background-color: $dark;
       }
     }
   }
+
   .banner-background {
     @include bg-banner(60vh, $dark, 0, 0);
   }
+
   .banner-container {
     // padding-left: 12%;
 
     .banner-row {
+
       //   height: 100%;
       .banner-text {
         color: $white;
         padding-right: 0;
         @include div-flex(column, center, center);
         height: 55vh;
+
         .banner-leader-info {
           background-color: $white;
           color: $dark;
@@ -32,10 +38,12 @@
           width: 100%;
         }
       }
+
       .banner-img {
         display: none;
         height: 55vh;
         padding: 0;
+
         img {
           border-bottom-right-radius: 115px;
           border-top-left-radius: 115px;
@@ -57,27 +65,33 @@
             @include hr-title($blue, auto);
           }
         }
+
         .leader-post {
           //   padding: 5%;
           background-color: $soft-blue;
           border-radius: 1em;
+
           .post-img {
             justify-content: center;
+
             img {
               height: 25rem;
               width: 75%;
               object-fit: cover;
             }
           }
-          .post-content {
-          }
+
+          .post-content {}
         }
       }
+
       .leaders-more {
-          .container-more {
-            background-color: $soft-blue;
+        .container-more {
+          background-color: $soft-blue;
+
           .box-recommend {
             height: 10rem;
+
             .box-r-img {
               img {
                 width: 100%;
@@ -87,6 +101,7 @@
             }
           }
         }
+
         //   height: 100vh;
       }
     }
@@ -96,6 +111,7 @@
     .banner-background {
       @include bg-banner(60vh, $dark, 115px, 115px);
     }
+
     .banner-container {
       .banner-row {
         .banner-img {
