@@ -1,6 +1,6 @@
 export const TOOLS = {
   "toolkits": [{
-      "id": "1",
+      "id": "entrevistando",
       "type": "toolkit",
       "mini-icon": "icon-interview",
       "image_url": "icon-meeting",
@@ -28,7 +28,7 @@ export const TOOLS = {
       ]
     },
     {
-      "id": "2",
+      "id": "evaluando-desempeño",
       "type": "toolkit",
       "mini-icon": "icon-productivity",
       "image_url": "icon-meeting",
@@ -52,7 +52,7 @@ export const TOOLS = {
       ]
     },
     {
-      "id": "3",
+      "id": "identificando-potencial",
       "type": "toolkit",
       "mini-icon": "icon-potential",
       "image_url": "icon-meeting",
@@ -76,7 +76,7 @@ export const TOOLS = {
       ]
     },
     {
-      "id": "4",
+      "id": "plan-de-desarrollo",
       "type": "toolkit",
       "mini-icon": "icon-productivity",
       "image_url": "icon-meeting",
@@ -100,7 +100,7 @@ export const TOOLS = {
       ]
     },
     {
-      "id": "5",
+      "id": "planeamiento",
       "type": "toolkit",
       "mini-icon": "icon-equality",
       "image_url": "icon-meeting",
@@ -128,7 +128,7 @@ export const TOOLS = {
       ]
     },
     {
-      "id": "6",
+      "id": "procesos",
       "type": "toolkit",
       "mini-icon": "icon-potential",
       "image_url": "icon-meeting",

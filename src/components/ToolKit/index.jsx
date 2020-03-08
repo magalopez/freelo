@@ -5,6 +5,8 @@ import Breadcrumb from "./components/Breadcrumb";
 import Template from "./components/Template";
 import CardTool from "./components/cardTool";
 import { Link } from 'react-router-dom'
+import Footer from "../_generic/Footer";
+
 
 
 import { TOOLS } from '../../assets/data/tools';
@@ -25,8 +27,6 @@ export default function (props) {
   const goToPage = (id, type) => {
     props.history.push(`/${type}/${id}`)
   }
-
-  console.log('s_e_l_e_c_t_e_d', selected)
 
   return (
     <div className="page-toolkits">
@@ -57,7 +57,9 @@ export default function (props) {
                       <hr />
                       {data.map((tool, i) => {
                         return (
-                          <div key={i} onClick={() => goToPage(tool.id, tool.type)} >
+                          <div
+                            key={i}
+                            onClick={() => goToPage(tool.id, tool.type)} >
                             {/* <Link to={`/${tool.type}/${tool.id}`}> */}
                             <CardTool
                               iconCard={tool["mini-icon"]}
@@ -73,6 +75,7 @@ export default function (props) {
           }
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
