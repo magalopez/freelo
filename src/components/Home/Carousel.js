@@ -3,7 +3,6 @@ import Swiper from "react-id-swiper";
 import { useHistory } from "react-router-dom";
 import Card from "./Card";
 
-
 export default function({ sliderContent, sliderTitle, sliderType }) {
   const data = Array.from(sliderContent);
   const params = {

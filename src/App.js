@@ -7,6 +7,7 @@ import {
   useParams
 } from "react-router-dom";
 
+
 import Home from "./components/Home";
 import Videos from "./components/Videos";
 import Leaders from "./components/Leaders";
@@ -21,7 +22,7 @@ function App() {
   // }
 
   return (
-    <BrowserRouter>
+    <BrowserRouter forceRefresh={true}>
       <Switch>
         <Route exact path="/">
           <Home />
@@ -35,9 +36,7 @@ function App() {
         <Route exact path="/leaders/:slug">
           <Leaders />
         </Route>
-        <Route exact path="/toolkit/:id">
-          <ToolKit />
-        </Route>
+        <Route exact path="/toolkit/:id" component={ToolKit} />  
       </Switch>
     </BrowserRouter>
   );

@@ -1,42 +1,76 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Banner from "./components/Banner";
 import Breadcrumb from "./components/Breadcrumb";
 import Template from "./components/Template";
 import CardTool from "./components/cardTool";
+import { Link } from 'react-router-dom'
 
-export default function () {
-  const { slug } = useParams();
 
-  const parrafoTool = 'El plan de desarrollo captura una fortaleza y un par de debilidades que muestra el colaborador para el desempeño de su cargo actual o pensando en un cargo futuro.'
+import { TOOLS } from '../../assets/data/tools';
+
+export default function (props) {
+  const [tool, setValues] = useState({})
+  const { id } = useParams();
+
+  const data = TOOLS.toolkits;
+
+  useEffect(() => {
+    const toolselected = data.filter(tool => tool.id === id);
+    setValues({ selected: toolselected });
+  }, [])
+
+  const { selected } = tool;
+
+  const goToPage = (id, type) => {
+    props.history.push(`/${type}/${id}`)
+  }
+
+  console.log('s_e_l_e_c_t_e_d', selected)
 
   return (
     <div className="page-toolkits">
       <div className="container">
         <div className="content-centered">
-          <Banner
-            toolimage={'icon-meeting'}
-            toolname={'Plan de desarrollo'} />
-          <Breadcrumb items={[
-            { title: 'Home', active: false, url: '/' },
-            { title: 'Plan de desarrollo', active: true, url: '/toolkit/:id' }
-          ]} />
-          <div className="row-sass">
-            <div className="tool-template col-sass">
-              <Template
-                toolTitle={'Plan de desarrollo'}
-                toolContent={parrafoTool}
-                videoPath="https://player.vimeo.com/video/233550803?color=F9B500&title=0&byline=0&portrait=0"
-                pdfBtn='“70-20-10”' />
-            </div>
-            <div className="more-tools col-sass">
-              <h2>Más Toolkits</h2>
-
-              <CardTool
-                iconCard={'icon-equality'}
-                textCard={'Diversidad e inclusión'} />
-            </div>
-          </div>
+          {
+            selected &&
+            selected.map((tool) => {
+              return (
+                <>
+                  <Banner
+                    toolimage={tool.image_url}
+                    toolname={tool.title} />
+                  <Breadcrumb items={[
+                    { title: 'Home', active: false, url: '/' },
+                    { title: `${tool.title}`, active: true, url: `/${tool.type}/${tool.id}` }
+                  ]} />
+                  <div className="row-sass">
+                    <div className="tool-template col-sass">
+                      <Template
+                        toolTitle={tool.title}
+                        toolContent={tool.description}
+                        videoPath={tool.video}
+                        files={tool.files} />
+                    </div>
+                    <div className="more-tools col-sass">
+                      <h2>Más Toolkits</h2>
+                      <hr />
+                      {data.map((tool, i) => {
+                        return (
+                          <div key={i} onClick={() => goToPage(tool.id, tool.type)} >
+                            {/* <Link to={`/${tool.type}/${tool.id}`}> */}
+                            <CardTool
+                              iconCard={tool["mini-icon"]}
+                              textCard={tool.title} />
+                            {/* </Link> */}
+                          </div>)
+                      })}
+                    </div>
+                  </div>
+                </>
+              )
+            })
+          }
         </div>
       </div>
     </div>

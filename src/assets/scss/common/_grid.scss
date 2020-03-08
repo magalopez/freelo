@@ -65,13 +65,13 @@ $xlarge-screen: 1360px;
   }
 }
 
-.row-sass {
-  display: flex;
-  flex-wrap: wrap;
-  // margin-left: auto;
-  // margin-right: auto;
-  // margin: 0 !important
-}
+// .row-sass {
+//   display: flex;
+//   flex-wrap: wrap;
+//   // margin-left: auto;
+//   // margin-right: auto;
+//   // margin: 0 !important
+// }
 
 .row-sass:after {
   content: "";

@@ -6,6 +6,8 @@ import Categories from "./Categories";
 import Content from "./Content.js";
 import video from "../../assets/img/video.png";
 
+import {TOOLS} from '../../assets/data/tools';
+
 export default function() {
   const news = [    
     {
@@ -181,14 +183,15 @@ export default function() {
       type: "leaders"
     }
   ];
-  
+  const tools = TOOLS.toolkits;
+
   return (
     <>
     <main className="page-home">
       <Header />
       <Categories />
       {/* <NavBar /> */}
-      <Content news={news} leaders={leaders} videos={videos} />
+      <Content news={news} leaders={leaders} videos={videos} tools={tools} />
       <Footer />
     </main>
     </>

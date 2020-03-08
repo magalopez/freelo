@@ -3,9 +3,8 @@ import React from 'react';
 function CardTool(props) {
   return (
     <div className="cardTool">
-      <div className={props.iconCard} />
+      <div className={`icon ${props.iconCard}`} />
       <p>{props.textCard}</p>
-      {/* <span>VER MÁS</span> */}
     </div>
   )
 }
