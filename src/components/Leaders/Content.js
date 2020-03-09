@@ -1,10 +1,11 @@
 import React from "react";
 import Post from "./Post";
 import SeeMore from "./See-more";
-import video from "../../assets/img/video.png";
+import { useRouteMatch, Link } from "react-router-dom";
 
 export default function({ dataLeader, allLeaders }) {
   const posts = dataLeader.posts;
+  let match = useRouteMatch();
 
   return (
     <>
@@ -15,7 +16,8 @@ export default function({ dataLeader, allLeaders }) {
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb">
                 <li className="breadcrumb-item">
-                  <a href="#">Inicio</a>
+                <Link to="/home">Inicio</Link>
+
                 </li>
                 <li className="breadcrumb-item">
                   <a href="#">Líderes</a>

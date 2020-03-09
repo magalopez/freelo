@@ -15,60 +15,61 @@ export default function() {
         image_url: video,
         content: "Toma de decisiones con data",
         Author: "Aaron Sabagh",
-        id: 1,
-        
+        type: "videos",
+        id: 1
       },
       {
         image_url: video,
         content: "Toma de decisiones con data",
         Author: "Aaron Sabagh",
-        id: 2,
-        
+        type: "videos",
+        id: 2
       },
       {
         image_url: video,
         content: "Toma de decisiones con data",
         Author: "Aaron Sabagh",
-        id: 3,
-        
+        type: "videos",
+        id: 3
       },
       {
         image_url: video,
         content: "Toma de decisiones con data",
         Author: "Aaron Sabagh",
-        id: 4,
-        
+        type: "leaders",
+        id: 4
       },
       {
         image_url: video,
         content: "Toma de decisiones con data",
         Author: "Aaron Sabagh",
-        id: 5,
-        
+        type: "leaders",
+        id: 5
       },
       {
         image_url: video,
         content: "Toma de decisiones con data",
         Author: "Aaron Sabagh",
-        id: 6,
-        
+        type: "leaders",
+        id: 6
       },
       {
         image_url: video,
         content: "Toma de decisiones con data",
         Author: "Aaron Sabagh",
-        id: 7,
-        
+        type: "leaders",
+
+        id: 7
       },
       {
         image_url: video,
         content: "Toma de decisiones con data",
         Author: "Aaron Sabagh",
-        id: 8,
-  
+        type: "videos",
+        id: 8
       }
     ]
-  }
+  };
 
   const videos = {
     type: "videos",
@@ -78,60 +79,60 @@ export default function() {
         content: "Toma de decisiones con data",
         Author: "Aaron Sabagh",
         id: 1,
-        
+        type: "videos"
       },
       {
         image_url: video,
         content: "Toma de decisiones con data",
         Author: "Aaron Sabagh",
         id: 2,
-        
+        type: "videos"
       },
       {
         image_url: video,
         content: "Toma de decisiones con data",
         Author: "Aaron Sabagh",
         id: 3,
-        
+        type: "videos"
       },
       {
         image_url: video,
         content: "Toma de decisiones con data",
         Author: "Aaron Sabagh",
         id: 4,
-        
+        type: "videos"
       },
       {
         image_url: video,
         content: "Toma de decisiones con data",
         Author: "Aaron Sabagh",
         id: 5,
-        
+        type: "videos"
       },
       {
         image_url: video,
         content: "Toma de decisiones con data",
         Author: "Aaron Sabagh",
         id: 6,
-        
+        type: "videos"
       },
       {
         image_url: video,
         content: "Toma de decisiones con data",
         Author: "Aaron Sabagh",
         id: 7,
-        
+        type: "videos"
       },
       {
         image_url: video,
         content: "Toma de decisiones con data",
         Author: "Aaron Sabagh",
         id: 8,
-        
+        type: "videos"
       }
     ]
-  }
-  
+  };
+
   const [leaders, setLeaders] = useState(leadersData);
 
   // useEffect(()=>{

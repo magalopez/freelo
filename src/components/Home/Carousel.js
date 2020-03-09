@@ -61,7 +61,7 @@ export default function({ sliderContent, sliderTitle, sliderType }) {
               <div
                 className="card slide-card"
                 key={i}
-                onClick={() => goToPage(el.id, sliderContent.type)}
+                onClick={() => goToPage(el.id, el.type)}
               >
                 <img className="card-img-top" src={leaderImg} alt="..." />
 

@@ -1,10 +1,18 @@
 import React from "react";
-import video from "../../assets/img/video.png";
+import { useHistory } from "react-router-dom";
+
 
 export default function({ current, allLeaders }) {
+  let history = useHistory();
+
   const moreLeaders = allLeaders.filter(el => {
     return current.id !== el.id;
   });
+
+  const goToLeader = (id) => {
+    history.push(`${id}`)
+  }
+
   return (
     <>
       <div className="col-12 col-md-4 leaders-more">
@@ -19,7 +27,7 @@ export default function({ current, allLeaders }) {
           </div>
           {moreLeaders &&
             moreLeaders.map(el => (
-              <div className="box-recommend row my-5">
+              <div className="box-recommend row my-5" onClick = {() => goToLeader(el.id)} >
                 <div className="col-7 box-r-img">
                   <img src={require(`../../assets/img/leaders/leaders_${el.id}.jpg`)} alt="" />
                 </div>

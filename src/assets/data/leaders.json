@@ -8,6 +8,7 @@
       "role": "leader",
       "position": "Board Member Intercorp",
       "image_url": "../../assets/img/leaders/leaders_1.jpg",
+      "type": "leaders",
       "posts": [
         {
           "id": 1,
@@ -26,6 +27,7 @@
       "role": "leader",
       "position": "CDO Intercorp",
       "image_url": "../../assets/img/leaders/leaders_2.jpg",
+      "type": "leaders",
       "posts": [
         {
           "id": 1,
@@ -60,6 +62,7 @@
       "role": "leader",
       "position": "CEO UCIC",
       "image_url": "../../assets/img/leaders/leaders_3.jpg",
+      "type": "leaders",
       "posts": [
         {
           "id": 1,
@@ -102,6 +105,7 @@
       "role": "leader",
       "position": "Board Member NGR",
       "image_url": "../../assets/img/leaders/leaders_4.jpg",
+      "type": "leaders",
       "posts": [
         {
           "id": 1,
@@ -144,6 +148,7 @@
       "role": "leader",
       "position": "CIO Intercorp",
       "image_url": "../../assets/img/leaders/leaders_5.jpg",
+      "type": "leaders",
       "posts": [
         {
           "id": 1,

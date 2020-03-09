@@ -83,7 +83,7 @@
           }
         }
         .container-more {
-          // border-radius: 15px;
+          margin-left: 5%;
           .see-more-title {
             hr {
               @include hr-title($yellow, 0);
@@ -91,6 +91,7 @@
           }
           .box-recommend {
             height: 10rem;
+            cursor: pointer;
             .box-r-img {
               img {
                 width: 100%;
