@@ -53,10 +53,18 @@ export default function({ sliderContent, sliderTitle, sliderType }) {
       <Swiper {...params}>
         {data &&
           data.map((el, i) => {
-            const leaderImg =
-              sliderContent.type !== "leaders"
-                ? video
-                : require(`../../assets/img/leaders/leaders_${el.id}.jpg`);
+            // const leaderImg =
+            //   sliderContent.type !== "leaders"
+            //     ? video
+            //     : require(`../../assets/img/leaders/leaders_${el.id}.jpg`);
+            // const leaderImg = video;
+            let leaderImg = "";
+            if (el.type === "leaders") {
+              leaderImg = require(`../../assets/img/leaders/leaders_${el.id}.jpg`);
+            } else {
+              leaderImg = video;
+            }
+
             return (
               <div
                 className="card slide-card"
@@ -67,10 +75,10 @@ export default function({ sliderContent, sliderTitle, sliderType }) {
 
                 <div className="card-body">
                   <p className="card-text montserrat-r">
-                    {el.Author || el.position}
+                    {el.author || el.position}
                   </p>
                   <h5 className="card-title montserrat-b">
-                    {el.content || el.name + " " + el.lastname}
+                    {el.title || el.name + " " + el.lastname}
                   </h5>
                 </div>
               </div>

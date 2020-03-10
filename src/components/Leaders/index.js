@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Header from "../_generic/Header";
 import NavBar from "../_generic/NavBar";
@@ -18,6 +18,10 @@ export default function(props) {
     return el.id === urlParam;
   });
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, urlParam);
+
   return (
     <>
       {leaderInfo.map((el, i) => (
@@ -30,7 +34,7 @@ export default function(props) {
             leaderImg={require(`../../assets/img/leaders/leaders_${el.id}.jpg`)}
           />
           {/* <NavBar /> */}
-          <Content dataLeader={el} allLeaders = {data} />
+          <Content dataLeader={el} allLeaders={data} />
           <Footer />
         </div>
       ))}

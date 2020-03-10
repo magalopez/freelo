@@ -6,6 +6,8 @@ import Categories from "./Categories";
 import Content from "./Content.js";
 import video from "../../assets/img/video.png";
 import leadersData from "../../assets/data/leaders.json";
+import videosData from "../../assets/data/videos.json";
+import getVimeoData from "../../controllers/vimeo";
 
 export default function() {
   const news = {
@@ -13,131 +15,71 @@ export default function() {
     data: [
       {
         image_url: video,
-        content: "Toma de decisiones con data",
-        Author: "Aaron Sabagh",
+        title: "Toma de decisiones con data",
+        author: "Aaron Sabagh",
         type: "videos",
         id: 1
       },
       {
         image_url: video,
-        content: "Toma de decisiones con data",
-        Author: "Aaron Sabagh",
+        title: "Toma de decisiones con data",
+        author: "Aaron Sabagh",
         type: "videos",
         id: 2
       },
       {
         image_url: video,
-        content: "Toma de decisiones con data",
-        Author: "Aaron Sabagh",
+        title: "Toma de decisiones con data",
+        author: "Aaron Sabagh",
         type: "videos",
         id: 3
       },
       {
         image_url: video,
-        content: "Toma de decisiones con data",
-        Author: "Aaron Sabagh",
+        title: "Toma de decisiones con data",
+        author: "Aaron Sabagh",
+        type: "leaders",
+        id: 1
+      },
+      {
+        image_url: video,
+        title: "Toma de decisiones con data",
+        author: "Aaron Sabagh",
+        type: "leaders",
+        id: 2
+      },
+      {
+        image_url: video,
+        title: "Toma de decisiones con data",
+        author: "Aaron Sabagh",
+        type: "leaders",
+        id: 3
+      },
+      {
+        image_url: video,
+        title: "Toma de decisiones con data",
+        author: "Aaron Sabagh",
         type: "leaders",
         id: 4
       },
       {
         image_url: video,
-        content: "Toma de decisiones con data",
-        Author: "Aaron Sabagh",
-        type: "leaders",
-        id: 5
-      },
-      {
-        image_url: video,
-        content: "Toma de decisiones con data",
-        Author: "Aaron Sabagh",
-        type: "leaders",
-        id: 6
-      },
-      {
-        image_url: video,
-        content: "Toma de decisiones con data",
-        Author: "Aaron Sabagh",
-        type: "leaders",
-
-        id: 7
-      },
-      {
-        image_url: video,
-        content: "Toma de decisiones con data",
-        Author: "Aaron Sabagh",
+        title: "Toma de decisiones con data",
+        author: "Aaron Sabagh",
         type: "videos",
         id: 8
       }
     ]
   };
 
-  const videos = {
-    type: "videos",
-    data: [
-      {
-        image_url: video,
-        content: "Toma de decisiones con data",
-        Author: "Aaron Sabagh",
-        id: 1,
-        type: "videos"
-      },
-      {
-        image_url: video,
-        content: "Toma de decisiones con data",
-        Author: "Aaron Sabagh",
-        id: 2,
-        type: "videos"
-      },
-      {
-        image_url: video,
-        content: "Toma de decisiones con data",
-        Author: "Aaron Sabagh",
-        id: 3,
-        type: "videos"
-      },
-      {
-        image_url: video,
-        content: "Toma de decisiones con data",
-        Author: "Aaron Sabagh",
-        id: 4,
-        type: "videos"
-      },
-      {
-        image_url: video,
-        content: "Toma de decisiones con data",
-        Author: "Aaron Sabagh",
-        id: 5,
-        type: "videos"
-      },
-      {
-        image_url: video,
-        content: "Toma de decisiones con data",
-        Author: "Aaron Sabagh",
-        id: 6,
-        type: "videos"
-      },
-      {
-        image_url: video,
-        content: "Toma de decisiones con data",
-        Author: "Aaron Sabagh",
-        id: 7,
-        type: "videos"
-      },
-      {
-        image_url: video,
-        content: "Toma de decisiones con data",
-        Author: "Aaron Sabagh",
-        id: 8,
-        type: "videos"
-      }
-    ]
-  };
-
   const [leaders, setLeaders] = useState(leadersData);
+  const [videos, setVideos] = useState(videosData);
 
-  // useEffect(()=>{
-  //   setLeaders(leadersData)
-  // }, [])
+  useEffect(() => {
+    // setLeaders(leadersData)
+    getVimeoData();
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
