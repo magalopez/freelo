@@ -1,8 +1,12 @@
 import React from "react";
 import Post from "./Post";
 import SeeMore from "./See-more";
+import { useRouteMatch, Link } from "react-router-dom";
 
-export default function() {
+export default function({ dataLeader, allLeaders }) {
+  const posts = dataLeader.posts;
+  let match = useRouteMatch();
+
   return (
     <>
       <div className="container main-leaders py-5">
@@ -12,13 +16,14 @@ export default function() {
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb">
                 <li className="breadcrumb-item">
-                  <a href="#">Inicio</a>
+                <Link to="/home">Inicio</Link>
+
                 </li>
                 <li className="breadcrumb-item">
                   <a href="#">Líderes</a>
                 </li>
                 <li className="breadcrumb-item active" aria-current="page">
-                  CRP
+                  {dataLeader.name} {dataLeader.lastname}
                 </li>
               </ol>
             </nav>
@@ -28,10 +33,12 @@ export default function() {
               <h1 className="text-center"> Recomendaciones</h1>
               <hr />
             </div>
-            <Post />
-            <Post />
+            {posts &&
+              posts.map((el, i) => (
+                <Post key={i} el={el} leader={dataLeader} />
+              ))}
           </div>
-          <SeeMore/>
+          <SeeMore allLeaders={allLeaders} current={dataLeader} />
         </div>
       </div>
     </>

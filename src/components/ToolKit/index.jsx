@@ -4,7 +4,6 @@ import Banner from "./components/Banner";
 import Breadcrumb from "./components/Breadcrumb";
 import Template from "./components/Template";
 import CardTool from "./components/cardTool";
-import { Link } from 'react-router-dom'
 import Footer from "../_generic/Footer";
 
 
@@ -60,11 +59,9 @@ export default function (props) {
                           <div
                             key={i}
                             onClick={() => goToPage(tool.id, tool.type)} >
-                            {/* <Link to={`/${tool.type}/${tool.id}`}> */}
                             <CardTool
                               iconCard={tool["mini-icon"]}
                               textCard={tool.title} />
-                            {/* </Link> */}
                           </div>)
                       })}
                     </div>

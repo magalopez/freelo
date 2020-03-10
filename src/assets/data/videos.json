@@ -1,0 +1,50 @@
+{
+  "type": "videos",
+  "data": [
+    {
+      "id": "idA",
+      "title": "titleA",
+      "category": [{ "comp": "", "behavior": [""] }],
+      "url": "urlA",
+      "description": "descriptionA",
+      "author": "authorA",
+      "type": "typeA",
+      "date": "dateA",
+      "views": "viewsA",
+      "likes": "likesA",
+      "thumbnail": "thumbnailA",
+      "timing": "timingA",
+      "tags": ["tags1A", "tags2A", "tags3A", "tags4A", "tags5A"]
+    },
+    {
+      "id": "idB",
+      "title": "titleB",
+      "category": [{ "comp": "", "behavior": [""] }],
+      "url": "urlB",
+      "description": "descriptionB",
+      "author": "authorB",
+      "type": "typeB",
+      "date": "dateB",
+      "views": "viewsB",
+      "likes": "likesB",
+      "thumbnail": "thumbnailB",
+      "timing": "timingB",
+      "tags": ["tags1B", "tags2B", "tags3B", "tags4B", "tags5B"]
+    },
+    {
+      "id": "idC",
+      "title": "titleC",
+      "category": [{ "comp": "", "behavior": [""] }],
+      "url": "urlC",
+      "description": "descriptionC",
+      "author": "authorC",
+      "type": "typeC",
+      "date": "dateC",
+      "views": "viewsC",
+      "likes": "likesC",
+      "thumbnail": "thumbnailC",
+      "timing": "timingC",
+      "tags": ["tags1B", "tags2B", "tags3B", "tags4B", "tags5B"]
+    }
+  ]
+}
