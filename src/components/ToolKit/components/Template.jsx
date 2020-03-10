@@ -12,8 +12,7 @@ function Template(props) {
       <h2>Descargar material</h2>
       <hr />
       <div className="download">
-        {props.files.map(file => (<a href={file.path} download={file.title}>
-          {file.title}</a>))}
+        {props.files.map(file => (<a href={file.path} download>{file.title}</a>))}
       </div>
     </>
   )

@@ -37,7 +37,7 @@ export const TOOLS = {
       "video": "https://player.vimeo.com/video/233550803?color=F9B500&title=0&byline=0&portrait=0",
       "files": [
         {
-          "path" : "src/assets/files/performance-evaluation/Plantilla_Desempeño.docx",
+          "path" : "../files/performance-evaluation/Plantilla_Desempeño.docx",
           "title": "Plantilla para evaluar desempeño"
         } 
       ],
@@ -61,7 +61,7 @@ export const TOOLS = {
       "video": "https://player.vimeo.com/video/233550776?color=F9B500&title=0&byline=0&portrait=0",
       "files": [
         {
-          "path" : "src/assets/files/potencial-identification/Plantilla_Potencial.docx",
+          "path" : "../files/potencial-identification/Plantilla_Potencial.docx",
           "title": "Plantilla para medir potencial"
         }
       ],      
@@ -85,7 +85,7 @@ export const TOOLS = {
       "video": "https://youfiles.herokuapp.com/videodictionary/?m=Video_Player_Drive&state=%7B%22ids%22:%5B%2212J4fsHmj0oS1mxJvSLtczO-LSrmAac87%22%5D,%22action%22:%22open%22,%22userId%22:%22115601758895531733206%22%7D",
       "files": [
         {
-          "path" : "src/assets/files/progress-plan/Desarrollo_FormatoPlanDes.xlsx",
+          "path" : "../files/progress-plan/Desarrollo_FormatoPlanDes.xlsx",
           "title": "Plantilla de plan de desarrollo"
         }
       ],
@@ -109,11 +109,11 @@ export const TOOLS = {
       "video": "https://player.vimeo.com/video/233550776?color=F9B500&title=0&byline=0&portrait=0",
       "files": [
         {
-          "path" : "src/assets/files/planning/lectura_previa_strategystatements.pdf",
+          "path" : "../files/planning/lectura_previa_strategystatements.pdf",
           "title": "Lectura: Can you say what your strategy is?"
         },
         {
-          "path" : "src/assets/files/planning/Plantilla_de_presentación_de_las_iniciativasv2.pptx",
+          "path" : "../files/planning/Plantilla_de_presentación_de_las_iniciativasv2.pptx",
           "title": "Plantilla de “Presentación de las iniciativas"
         }
       ],
@@ -137,11 +137,11 @@ export const TOOLS = {
       "video": "https://player.vimeo.com/video/233550776?color=F9B500&title=0&byline=0&portrait=0",
       "files": [
         {
-          "path" : "src/assets/files/processes/Cronograma_Proyecto.xlsx",
+          "path" : "../files/processes/Cronograma_Proyecto.xlsx",
           "title": 'Plantilla de "Cronograma de Proyectos"'
         },
         {
-          "path" : "src/assets/files/processes/Levantamiento_Proceso.xlsx",
+          "path" : "../files/processes/Levantamiento_Proceso.xlsx",
           "title": 'Plantilla de "Levantamiento de procesos"'
         }
       ],
