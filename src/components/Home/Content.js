@@ -6,8 +6,8 @@ export default function({ news, videos, leaders, tools }) {
     <>
     <section className="main-home container">
       <Carousel sliderContent={news} sliderTitle="Novedades" />
-      <Carousel sliderContent={videos} sliderTitle="Videos" />
       <Carousel sliderContent={leaders} sliderTitle="¿Qué leen nuestros líderes?"/>
+      <Carousel sliderContent={videos} sliderTitle="Videos" />
       <Carousel sliderContent={tools} sliderTitle="Toolkits"/>
     </section>
     </>

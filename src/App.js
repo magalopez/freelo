@@ -24,11 +24,36 @@ function App() {
   return (
     <BrowserRouter forceRefresh={true}>
       <Switch>
-        <Route exact path="/"  component = {Home}/>
-        <Route exact path="/home"  component = {Home}/>
-        <Route exact path="/videos/:slug" component = {Videos}/>
-        <Route exact path="/leaders/:slug"  component = {Leaders}/>
-        <Route exact path="/toolkit/:id" component={ToolKit} />  
+        <Route
+          exact
+          path="/"
+          component={Home}
+          onUpdate={() => window.scrollTo(0, 0)}
+        />
+        <Route
+          exact
+          path="/home"
+          component={Home}
+          onUpdate={() => window.scrollTo(0, 0)}
+        />
+        <Route
+          exact
+          path="/videos/:slug"
+          component={Videos}
+          onUpdate={() => window.scrollTo(0, 0)}
+        />
+        <Route
+          exact
+          path="/leaders/:slug"
+          component={Leaders}
+          onUpdate={() => window.scrollTo(0, 0)}
+        />
+        <Route
+          exact
+          path="/toolkit/:id"
+          component={ToolKit}
+          onUpdate={() => window.scrollTo(0, 0)}
+        />
       </Switch>
     </BrowserRouter>
   );
